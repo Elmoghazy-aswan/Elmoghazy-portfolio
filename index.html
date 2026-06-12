@@ -57,7 +57,7 @@
       .hero-banner {
         background: linear-gradient(135deg, var(--primary), var(--secondary));
         color: var(--white);
-        padding: 60px 40px;
+        padding: 50px 40px;
         border-bottom: 5px solid var(--gold);
       }
 
@@ -84,7 +84,7 @@
       .hero-summary {
         color: #dbe7ef;
         font-size: 16px;
-        max-width: 850px;
+        max-width: 950px;
         text-align: justify;
       }
 
@@ -193,6 +193,7 @@
       .profile-img {
         width: 160px;
         height: 160px;
+        aspect-ratio: 1 / 1;
         object-fit: cover;
         border-radius: 50%;
         border: 4px solid var(--primary);
@@ -207,7 +208,8 @@
         font-size: 13px;
         color: var(--text);
         margin-top: 8px;
-        justify-content: center;
+        justify-content: flex-start;
+        padding-right: 10px;
       }
 
       /* INFOGRAPHIC SKILLS */
@@ -245,7 +247,7 @@
 
       .cert-ul li {
         position: relative;
-        padding-right: 20px;
+        padding-right: 25px;
         font-size: 13.5px;
         margin-bottom: 12px;
         color: #374151;
@@ -253,10 +255,11 @@
 
       .cert-ul li::before {
         content: '\f0a4';
-        font-family: 'Font Awesome 5 Free';
+        font-family: 'Font Awesome 6 Free';
         font-weight: 900;
         position: absolute;
         right: 0;
+        top: 2px;
         color: var(--gold);
       }
 
@@ -290,6 +293,9 @@
           flex-direction: column;
           text-align: center;
         }
+        .contact-link {
+          justify-content: center;
+        }
       }
 
       @media print {
@@ -306,12 +312,20 @@
           display: none;
         }
         .hero-banner {
-          background: #102838 !important;
+          background: linear-gradient(135deg, #102838, #16384b) !important;
+          color: white !important;
           -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+        .hero-text h1, .hero-text h2, .hero-summary {
+          color: inherit !important;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
         }
         .progress-fill {
-          background: #c7a441 !important;
+          background: linear-gradient(90deg, #c7a441, #1f4e66) !important;
           -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
         }
       }
       @page {
@@ -337,7 +351,7 @@
             <h2>التحول الرقمي • الحلول التقنية • نظم المتابعة والرصد</h2>
             <p class="hero-summary">
               خبرات مهنية ممتدة في تطوير بيئات العمل الرقمية، وبناء نظم المتابعة
-              والرصد، وتحليل المشكلات التشغيلية، وتطوير الحلول التقنية للمؤسسات
+              والرصد، تحليل المشكلات التشغيلية، وتطوير الحلول التقنية للمؤسسات
               التعليمية، إلى جانب التدريب وبناء القدرات في مجالات الثقافة
               الرقمية والسلامة المعلوماتية وحوكمة البيانات الإدارية.
             </p>
