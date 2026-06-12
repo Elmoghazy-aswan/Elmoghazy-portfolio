@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>المغازي منصور حسانين | السيرة الذاتية الرقمية</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+      :root {
+        --primary: #102838;
+        --secondary: #16384b;
+        --accent: #1f4e66;
+        --gold: #c7a441;
+        --bg: #f3f6f9;
+        --text: #1f2937;
+        --muted: #6b7280;
+        --white: #ffffff;
+        --border: #e5e7eb;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Cairo', sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.8;
+        padding: 20px 0;
+      }
+
+      .cv-wrapper {
+        max-width: 1150px;
+        margin: 0 auto;
+        background: var(--white);
+        border-radius: 24px;
+        box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+        overflow: hidden;
+        border: 1px solid var(--border);
+      }
+
+      /* HERO SECTION */
+      .hero-banner {
+        background: linear-gradient(135deg, var(--primary), var(--secondary));
+        color: var(--white);
+        padding: 60px 40px;
+        border-bottom: 5px solid var(--gold);
+      }
+
+      .hero-layout {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+      }
+
+      .hero-text h1 {
+        font-size: 42px;
+        font-weight: 800;
+        margin-bottom: 8px;
+        color: var(--white);
+      }
+
+      .hero-text h2 {
+        color: var(--gold);
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+
+      .hero-summary {
+        color: #dbe7ef;
+        font-size: 16px;
+        max-width: 850px;
+        text-align: justify;
+      }
+
+      /* MAIN CONTENT LAYOUT */
+      .main-layout {
+        display: grid;
+        grid-template-columns: 1fr 320px;
+        gap: 40px;
+        padding: 40px;
+      }
+
+      .section-title {
+        font-size: 24px;
+        color: var(--primary);
+        margin-bottom: 25px;
+        font-weight: 800;
+        position: relative;
+        padding-right: 15px;
+      }
+
+      .section-title::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 6px;
+        width: 5px;
+        height: 24px;
+        background: var(--gold);
+        border-radius: 4px;
+      }
+
+      /* TIMELINE */
+      .timeline {
+        position: relative;
+        margin-right: 10px;
+      }
+
+      .timeline::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background: #d6dce2;
+      }
+
+      .timeline-item {
+        position: relative;
+        padding-right: 35px;
+        margin-bottom: 40px;
+      }
+
+      .timeline-item:last-child {
+        margin-bottom: 0;
+      }
+
+      .timeline-item::before {
+        content: '';
+        position: absolute;
+        right: -6px;
+        top: 8px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: var(--accent);
+        border: 3px solid white;
+        box-shadow: 0 0 0 2px var(--gold);
+      }
+
+      .timeline-item h3 {
+        color: var(--primary);
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .timeline-item span {
+        color: var(--gold);
+        font-size: 13px;
+        font-weight: 700;
+        display: inline-block;
+        margin-bottom: 8px;
+      }
+
+      .timeline-item p {
+        font-size: 14.5px;
+        color: #4b5563;
+        text-align: justify;
+      }
+
+      /* LEFT SIDEBAR */
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+      }
+
+      .profile-card {
+        text-align: center;
+        background: #fafbfc;
+        padding: 20px;
+        border-radius: 16px;
+        border: 1px solid var(--border);
+      }
+
+      .profile-img {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid var(--primary);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        margin-bottom: 15px;
+      }
+
+      .contact-link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 13px;
+        color: var(--text);
+        margin-top: 8px;
+        justify-content: center;
+      }
+
+      /* INFOGRAPHIC SKILLS */
+      .info-skill-item {
+        margin-bottom: 15px;
+      }
+
+      .info-skill-info {
+        display: flex;
+        justify-content: space-between;
+        font-size: 13.5px;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 5px;
+      }
+
+      .progress-bar {
+        width: 100%;
+        height: 6px;
+        background: #e2e8f0;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      .progress-fill {
+        height: 100%;
+        background: linear-gradient(90deg, var(--gold), var(--accent));
+        border-radius: 10px;
+      }
+
+      /* CERTIFICATIONS LIST */
+      .cert-ul {
+        list-style: none;
+      }
+
+      .cert-ul li {
+        position: relative;
+        padding-right: 20px;
+        font-size: 13.5px;
+        margin-bottom: 12px;
+        color: #374151;
+      }
+
+      .cert-ul li::before {
+        content: '\f0a4';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        position: absolute;
+        right: 0;
+        color: var(--gold);
+      }
+
+      .print-btn-container {
+        text-align: center;
+        padding: 20px;
+      }
+
+      .btn-print {
+        background: var(--primary);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 50px;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .btn-print:hover {
+        background: var(--gold);
+      }
+
+      /* RESPONSIVE & PRINT */
+      @media (max-width: 900px) {
+        .main-layout {
+          grid-template-columns: 1fr;
+        }
+        .hero-layout {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+
+      @media print {
+        body {
+          padding: 0;
+          background: white;
+          zoom: 85%;
+        }
+        .cv-wrapper {
+          box-shadow: none;
+          border: none;
+        }
+        .print-btn-container {
+          display: none;
+        }
+        .hero-banner {
+          background: #102838 !important;
+          -webkit-print-color-adjust: exact;
+        }
+        .progress-fill {
+          background: #c7a441 !important;
+          -webkit-print-color-adjust: exact;
+        }
+      }
+      @page {
+        size: A4;
+        margin: 10mm;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="print-btn-container">
+      <button onclick="window.print()" class="btn-print">
+        <i class="fa-solid fa-print"></i> طباعة السيرة الذاتية PDF
+      </button>
+    </div>
+
+    <div class="cv-wrapper">
+      <!-- الهيدر المطور -->
+      <header class="hero-banner">
+        <div class="hero-layout">
+          <div class="hero-text">
+            <h1>المغازي منصور حسانين</h1>
+            <h2>التحول الرقمي • الحلول التقنية • نظم المتابعة والرصد</h2>
+            <p class="hero-summary">
+              خبرات مهنية ممتدة في تطوير بيئات العمل الرقمية، وبناء نظم المتابعة
+              والرصد، وتحليل المشكلات التشغيلية، وتطوير الحلول التقنية للمؤسسات
+              التعليمية، إلى جانب التدريب وبناء القدرات في مجالات الثقافة
+              الرقمية والسلامة المعلوماتية وحوكمة البيانات الإدارية.
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <!-- التقسيم العمودي للإنفوجرافيك -->
+      <div class="main-layout">
+        <!-- العمود الأيمن الرئيسي: المسار المهني -->
+        <main>
+          <h2 class="section-title">
+            <i
+              class="fa-solid fa-briefcase"
+              style="color: var(--accent); margin-left: 8px"
+            ></i>
+            الخبرات المهنية
+          </h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>مدير إدارة الأزمات والكوارث والحد من المخاطر</h3>
+              <span>مديرية التربية والتعليم بأسوان | منذ 2025</span>
+              <p>
+                متابعة نظم الرصد والتقارير التشغيلية، ودعم إجراءات الجاهزية،
+                والمشاركة في تطوير آليات المتابعة الرقمية وغرف العمليات الموحدة
+                وحوكمة البيانات داخل بيئات العمل التعليمية.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <h3>عضو التطوير التكنولوجي والتدريب</h3>
+              <span>مديرية التربية والتعليم بأسوان</span>
+              <p>
+                تنفيذ البرامج التدريبية الوزارية في مجالات الثقافة الرقمية،
+                والسلامة المعلوماتية، وتطوير مهارات استخدام التقنيات الحديثة
+                والأمن السيبراني للكوادر التعليمية والإدارية.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <h3>عضو التطوير التكنولوجي</h3>
+              <span>إدارة أسوان التعليمية</span>
+              <p>
+                المشاركة في دعم التحول الرقمي بالمؤسسات التعليمية، وتقديم الدعم
+                الفني والتشغيلي المباشر، والمساهمة في تطوير بيئات العمل التقنية
+                وهندسة حلول شبكات المدارس والإدارات.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <h3>مؤسس ومدير مركز حلول تكنولوجيا المعلومات</h3>
+              <span>القطاع الخاص | 2003 - 2019</span>
+              <p>
+                تنفيذ أعمال الدعم الفني المتقدم، وتطوير الحلول التشغيلية،
+                ومتابعة البنية التقنية وتأمين قواعد البيانات، وتقديم خدمات
+                الصيانة والتحليل الفني للمنشآت والأنشطة التجارية والصيدليات.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <h3>محاضر ومدرب تقني وبناء قدرات</h3>
+              <span>مكتبة مصر العامة بأسوان | نشاط تدريبي ومجتمعي</span>
+              <p>
+                تنفيذ برامج ومحاضرات تدريبية تخصصية للشباب والنشء في مجالات
+                الثقافة الرقمية، البرمجة الأساسية، السلامة المعلوماتية، والتوعية
+                بالمخاطر الرقمية وتنمية مهارات التفكير المنطقي الفعال.
+              </p>
+            </div>
+          </div>
+        </main>
+
+        <!-- العمود الأيسر الجانبي: العناصر البصرية والمهارات -->
+        <aside class="sidebar">
+          <!-- بطاقة الصورة والاتصال -->
+          <div class="profile-card">
+            <img src="profile.jpg" alt="المغازي منصور" class="profile-img" />
+            <div class="contact-link">
+              <i
+                class="fa-solid fa-location-dot"
+                style="color: var(--gold)"
+              ></i>
+              أسوان - الصداقة الجديدة
+            </div>
+            <div class="contact-link">
+              <i class="fa-solid fa-phone" style="color: var(--gold)"></i>
+              +201099944499
+            </div>
+            <div class="contact-link">
+              <i class="fa-solid fa-envelope" style="color: var(--gold)"></i>
+              3122741@aswan1.moe.edu.eg
+            </div>
+          </div>
+
+          <!-- المهارات الإنفوجرافيكية بالأشرطة الملونة -->
+          <div>
+            <h2 class="section-title">
+              <i
+                class="fa-solid fa-star"
+                style="color: var(--accent); margin-left: 8px"
+              ></i>
+              الكفاءات الرقمية
+            </h2>
+
+            <div class="info-skill-item">
+              <div class="info-skill-info">
+                <span>تطوير الحلول الرقمية</span><span>95%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 95%"></div>
+              </div>
+            </div>
+
+            <div class="info-skill-item">
+              <div class="info-skill-info">
+                <span>نظم الرصد والمتابعة</span><span>90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="info-skill-item">
+              <div class="info-skill-info">
+                <span>الدعم الفني والشبكات</span><span>95%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 95%"></div>
+              </div>
+            </div>
+
+            <div class="info-skill-item">
+              <div class="info-skill-info">
+                <span>الثقافة والسلامة الرقمية</span><span>90%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div class="info-skill-item">
+              <div class="info-skill-info">
+                <span>التدريب وبناء القدرات</span><span>95%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 95%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- الاعتمادات والشهادات -->
+          <div>
+            <h2 class="section-title">
+              <i
+                class="fa-solid fa-certificate"
+                style="color: var(--accent); margin-left: 8px"
+              ></i>
+              الاعتمادات المهنية
+            </h2>
+            <ul class="cert-ul">
+              <li>
+                مدرب معتمد TOT في المهارات الحياتية والسلامة الرقمية (اليونيسف
+                والوزارة).
+              </li>
+              <li>دورات تخصصية في الأمن القومي وإدارة الأزمات والكوارث.</li>
+              <li>
+                اعتماد تدريبي في القيادة والتنمية المؤسسية (الجمهورية الجديدة).
+              </li>
+            </ul>
+          </div>
+
+          <!-- المؤهل الأكاديمي -->
+          <div>
+            <h2 class="section-title">
+              <i
+                class="fa-solid fa-graduation-cap"
+                style="color: var(--accent); margin-left: 8px"
+              ></i>
+              المؤهل الأكاديمي
+            </h2>
+            <p
+              style="font-size: 13.5px; font-weight: 700; color: var(--primary)"
+            >
+              بكالوريوس التربية
+            </p>
+            <p style="font-size: 12.5px; color: var(--muted)">
+              جامعة أسوان - كلية التربية (2007)
+            </p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>
