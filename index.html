@@ -1,547 +1,1570 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>المغازي منصور حسانين | السيرة الذاتية الرقمية</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+<head>
 
-    <style>
-      :root {
-        --primary: #102838;
-        --secondary: #16384b;
-        --accent: #1f4e66;
-        --gold: #c7a441;
-        --bg: #f3f6f9;
-        --text: #1f2937;
-        --muted: #6b7280;
-        --white: #ffffff;
-        --border: #e5e7eb;
-      }
+<meta charset="UTF-8">
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-      body {
-        font-family: 'Cairo', sans-serif;
-        background: var(--bg);
-        color: var(--text);
-        line-height: 1.8;
-        padding: 20px 0;
-      }
+<title>
+المغازي منصور حسانين | السيرة الذاتية الرقمية
+</title>
 
-      .cv-wrapper {
-        max-width: 1150px;
-        margin: 0 auto;
-        background: var(--white);
-        border-radius: 24px;
-        box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
-        overflow: hidden;
-        border: 1px solid var(--border);
-      }
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-      /* HERO SECTION */
-      .hero-banner {
-        background: linear-gradient(135deg, var(--primary), var(--secondary));
-        color: var(--white);
-        padding: 50px 40px;
-        border-bottom: 5px solid var(--gold);
-      }
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
 
-      .hero-layout {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-      }
+<link
+href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
 
-      .hero-text h1 {
-        font-size: 42px;
-        font-weight: 800;
-        margin-bottom: 8px;
-        color: var(--white);
-      }
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-      .hero-text h2 {
-        color: var(--gold);
-        font-size: 20px;
-        font-weight: 600;
-        margin-bottom: 15px;
-      }
+<style>
 
-      .hero-summary {
-        color: #dbe7ef;
-        font-size: 16px;
-        max-width: 950px;
-        text-align: justify;
-      }
+:root{
 
-      /* MAIN CONTENT LAYOUT */
-      .main-layout {
-        display: grid;
-        grid-template-columns: 1fr 320px;
-        gap: 40px;
-        padding: 40px;
-      }
+--primary-dark:#0b1220;
+--secondary-dark:#172033;
 
-      .section-title {
-        font-size: 24px;
-        color: var(--primary);
-        margin-bottom: 25px;
-        font-weight: 800;
-        position: relative;
-        padding-right: 15px;
-      }
+--accent-blue:#38bdf8;
 
-      .section-title::before {
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 6px;
-        width: 5px;
-        height: 24px;
-        background: var(--gold);
-        border-radius: 4px;
-      }
+--accent-cyan:#22d3ee;
 
-      /* TIMELINE */
-      .timeline {
-        position: relative;
-        margin-right: 10px;
-      }
+--gold-premium:#d4a017;
 
-      .timeline::before {
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 2px;
-        height: 100%;
-        background: #d6dce2;
-      }
+--gold-soft:#fef3c7;
 
-      .timeline-item {
-        position: relative;
-        padding-right: 35px;
-        margin-bottom: 40px;
-      }
+--bg-main:#f4f7fb;
 
-      .timeline-item:last-child {
-        margin-bottom: 0;
-      }
+--text-main:#334155;
 
-      .timeline-item::before {
-        content: '';
-        position: absolute;
-        right: -6px;
-        top: 8px;
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background: var(--accent);
-        border: 3px solid white;
-        box-shadow: 0 0 0 2px var(--gold);
-      }
+--text-muted:#64748b;
 
-      .timeline-item h3 {
-        color: var(--primary);
-        font-size: 18px;
-        font-weight: 700;
-      }
+--white:#ffffff;
 
-      .timeline-item span {
-        color: var(--gold);
-        font-size: 13px;
-        font-weight: 700;
-        display: inline-block;
-        margin-bottom: 8px;
-      }
+--border-soft:#e2e8f0;
 
-      .timeline-item p {
-        font-size: 14.5px;
-        color: #4b5563;
-        text-align: justify;
-      }
+}
 
-      /* LEFT SIDEBAR */
-      .sidebar {
-        display: flex;
-        flex-direction: column;
-        gap: 35px;
-      }
+/* RESET */
 
-      .profile-card {
-        text-align: center;
-        background: #fafbfc;
-        padding: 20px;
-        border-radius: 16px;
-        border: 1px solid var(--border);
-      }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-      .profile-img {
-        width: 160px;
-        height: 160px;
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
-        border-radius: 50%;
-        border: 4px solid var(--primary);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-        margin-bottom: 15px;
-      }
+html{
+scroll-behavior:smooth;
+}
 
-      .contact-link {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        font-size: 13px;
-        color: var(--text);
-        margin-top: 8px;
-        justify-content: flex-start;
-        padding-right: 10px;
-      }
+body{
 
-      /* INFOGRAPHIC SKILLS */
-      .info-skill-item {
-        margin-bottom: 15px;
-      }
+font-family:'Cairo',sans-serif;
 
-      .info-skill-info {
-        display: flex;
-        justify-content: space-between;
-        font-size: 13.5px;
-        font-weight: 700;
-        color: var(--primary);
-        margin-bottom: 5px;
-      }
+background:
+linear-gradient(
+180deg,
+#f8fafc,
+#eef4f8
+);
 
-      .progress-bar {
-        width: 100%;
-        height: 6px;
-        background: #e2e8f0;
-        border-radius: 10px;
-        overflow: hidden;
-      }
+color:var(--text-main);
 
-      .progress-fill {
-        height: 100%;
-        background: linear-gradient(90deg, var(--gold), var(--accent));
-        border-radius: 10px;
-      }
+line-height:1.9;
 
-      /* CERTIFICATIONS LIST */
-      .cert-ul {
-        list-style: none;
-      }
+padding:40px 0;
 
-      .cert-ul li {
-        position: relative;
-        padding-right: 25px;
-        font-size: 13.5px;
-        margin-bottom: 12px;
-        color: #374151;
-      }
+overflow-x:hidden;
 
-      .cert-ul li::before {
-        content: '\f0a4';
-        font-family: 'Font Awesome 6 Free';
-        font-weight: 900;
-        position: absolute;
-        right: 0;
-        top: 2px;
-        color: var(--gold);
-      }
+}
 
-      .print-btn-container {
-        text-align: center;
-        padding: 20px;
-      }
+/* MAIN SHELL */
 
-      .btn-print {
-        background: var(--primary);
-        color: white;
-        border: none;
-        padding: 12px 30px;
-        border-radius: 50px;
-        font-family: 'Cairo', sans-serif;
-        font-weight: 700;
-        cursor: pointer;
-        transition: 0.3s;
-      }
+.cv-shell{
 
-      .btn-print:hover {
-        background: var(--gold);
-      }
+max-width:1180px;
 
-      /* RESPONSIVE & PRINT */
-      @media (max-width: 900px) {
-        .main-layout {
-          grid-template-columns: 1fr;
-        }
-        .hero-layout {
-          flex-direction: column;
-          text-align: center;
-        }
-        .contact-link {
-          justify-content: center;
-        }
-      }
+margin:auto;
 
-      @media print {
-        body {
-          padding: 0;
-          background: white;
-          zoom: 85%;
-        }
-        .cv-wrapper {
-          box-shadow: none;
-          border: none;
-        }
-        .print-btn-container {
-          display: none;
-        }
-        .hero-banner {
-          background: linear-gradient(135deg, #102838, #16384b) !important;
-          color: white !important;
-          -webkit-print-color-adjust: exact;
-          print-color-adjust: exact;
-        }
-        .hero-text h1, .hero-text h2, .hero-summary {
-          color: inherit !important;
-          -webkit-print-color-adjust: exact;
-          print-color-adjust: exact;
-        }
-        .progress-fill {
-          background: linear-gradient(90deg, #c7a441, #1f4e66) !important;
-          -webkit-print-color-adjust: exact;
-          print-color-adjust: exact;
-        }
-      }
-      @page {
-        size: A4;
-        margin: 10mm;
-      }
-    </style>
-  </head>
+background:rgba(255,255,255,.72);
 
-  <body>
-    <div class="print-btn-container">
-      <button onclick="window.print()" class="btn-print">
-        <i class="fa-solid fa-print"></i> طباعة السيرة الذاتية PDF
-      </button>
-    </div>
+backdrop-filter:blur(18px);
 
-    <div class="cv-wrapper">
-      <!-- الهيدر المطور -->
-      <header class="hero-banner">
-        <div class="hero-layout">
-          <div class="hero-text">
-            <h1>المغازي منصور حسانين</h1>
-            <h2>التحول الرقمي • الحلول التقنية • نظم المتابعة والرصد</h2>
-            <p class="hero-summary">
-              خبرات مهنية ممتدة في تطوير بيئات العمل الرقمية، وبناء نظم المتابعة
-              والرصد، تحليل المشكلات التشغيلية، وتطوير الحلول التقنية للمؤسسات
-              التعليمية، إلى جانب التدريب وبناء القدرات في مجالات الثقافة
-              الرقمية والسلامة المعلوماتية والحلول البرمجية
-            </p>
-          </div>
-        </div>
-      </header>
+border:1px solid rgba(255,255,255,.6);
 
-      <!-- التقسيم العمودي للإنفوجرافيك -->
-      <div class="main-layout">
-        <!-- العمود الأيمن الرئيسي: المسار المهني -->
-        <main>
-          <h2 class="section-title">
-            <i
-              class="fa-solid fa-briefcase"
-              style="color: var(--accent); margin-left: 8px"
-            ></i>
-            الخبرات المهنية
-          </h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <h3>مدير إدارة الأزمات والكوارث والحد من المخاطر</h3>
-              <span>مديرية التربية والتعليم بأسوان | منذ سبتمبر 2025</span>
-              <p>
-                متابعة نظم الرصد والتقارير التشغيلية، ودعم إجراءات الجاهزية،
-                والمشاركة في تطوير آليات المتابعة الرقمية وغرف العمليات الموحدة
-                وحوكمة البيانات داخل بيئات العمل التعليمية.
-              </p>
-            </div>
+border-radius:34px;
 
-            <div class="timeline-item">
-              <h3>عضو التطوير التكنولوجي والتدريب</h3>
-              <span>مديرية التربية والتعليم بأسوان</span>
-              <p>
-                تنفيذ البرامج التدريبية الوزارية في مجالات الثقافة الرقمية،
-                والسلامة المعلوماتية، وتطوير مهارات استخدام التقنيات الحديثة
-                والأمن السيبراني للكوادر التعليمية والإدارية.
-              </p>
-            </div>
+overflow:hidden;
 
-            <div class="timeline-item">
-              <h3>عضو التطوير التكنولوجي</h3>
-              <span>إدارة أسوان التعليمية - منذ سبتمبر 2023</span>
-              <p>
-                المشاركة في دعم التحول الرقمي بالمؤسسات التعليمية، وتقديم الدعم
-                الفني والتشغيلي المباشر، والمساهمة في تطوير بيئات العمل التقنية
-                وتدريبات المعلمين والطلاب على البرمجيات والجرافيك والتكنولوجيا الرقمية ، والحصول على المركز الأول للبرمجة في مسابقة اليونيسف للحماية من مخاطر الانترنت.
-              </p>
-            </div>
+box-shadow:
+0 25px 60px rgba(15,23,42,.08);
 
-            <div class="timeline-item">
-              <h3>مؤسس مركز حلول برمجية سابقاً</h3>
-              <span>القطاع الخاص | 2003 - 2019</span>
-              <p>
-                تنفيذ أعمال الدعم الفني المتقدم، وتطوير الحلول التشغيلية،
-                ومتابعة البنية التقنية وتأمين قواعد البيانات، وتقديم خدمات
-                الصيانة والتحليل الفني للمنشآت والأنشطة التجارية والصيدليات.
-              </p>
-            </div>
+position:relative;
 
-            <div class="timeline-item">
-              <h3>محاضر ومدرب تقني وبناء قدرات</h3>
-              <span>مكتبة مصر العامة بأسوان | نشاط تدريبي ومجتمعي في أوقات العمل الغير رسمية </span>
-              <p>
-                تنفيذ برامج ومحاضرات تدريبية تخصصية للشباب والنشء في مجالات
-                الثقافة الرقمية، البرمجة الأساسية، السلامة المعلوماتية، والتوعية
-                بالمخاطر الرقمية وتنمية مهارات التفكير المنطقي الفعال.
-              </p>
-            </div>
-          </div>
-        </main>
+}
 
-        <!-- العمود الأيسر الجانبي: العناصر البصرية والمهارات -->
-        <aside class="sidebar">
-          <!-- بطاقة الصورة والاتصال -->
-          <div class="profile-card">
-            <img src="profile.jpg" alt="المغازي منصور" class="profile-img" />
-            <div class="contact-link">
-              <i
-                class="fa-solid fa-location-dot"
-                style="color: var(--gold)"
-              ></i>
-              أسوان - الصداقة الجديدة
-            </div>
-            <div class="contact-link">
-              <i class="fa-solid fa-phone" style="color: var(--gold)"></i>
-              +201099944499
-            </div>
-            <div class="contact-link">
-              <i class="fa-solid fa-envelope" style="color: var(--gold)"></i>
-              3122741@aswan1.moe.edu.eg
-            </div>
-          </div>
+/* HERO */
 
-          <!-- المهارات الإنفوجرافيكية بالأشرطة الملونة -->
-          <div>
-            <h2 class="section-title">
-              <i
-                class="fa-solid fa-star"
-                style="color: var(--accent); margin-left: 8px"
-              ></i>
-              الكفاءات الرقمية
-            </h2>
+.hero{
 
-            <div class="info-skill-item">
-              <div class="info-skill-info">
-                <span>تطوير الحلول الرقمية</span><span>95%</span>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 95%"></div>
-              </div>
-            </div>
+position:relative;
 
-            <div class="info-skill-item">
-              <div class="info-skill-info">
-                <span>نظم الرصد والمتابعة</span><span>90%</span>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 90%"></div>
-              </div>
-            </div>
+padding:70px 55px;
 
-            <div class="info-skill-item">
-              <div class="info-skill-info">
-                <span>الدعم الفني والشبكات</span><span>95%</span>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 95%"></div>
-              </div>
-            </div>
+overflow:hidden;
 
-            <div class="info-skill-item">
-              <div class="info-skill-info">
-                <span>الثقافة والسلامة الرقمية</span><span>90%</span>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 90%"></div>
-              </div>
-            </div>
+background:
+linear-gradient(
+135deg,
+rgba(11,18,32,.95),
+rgba(23,32,51,.94)
+),
 
-            <div class="info-skill-item">
-              <div class="info-skill-info">
-                <span>التدريب وبناء القدرات</span><span>95%</span>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 95%"></div>
-              </div>
-            </div>
-          </div>
+url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600');
 
-          <!-- الاعتمادات والشهادات -->
-          <div>
-            <h2 class="section-title">
-              <i
-                class="fa-solid fa-certificate"
-                style="color: var(--accent); margin-left: 8px"
-              ></i>
-              الاعتمادات المهنية
-            </h2>
-            <ul class="cert-ul">
-              <li>
-                مدرب معتمد TOT في المهارات الحياتية والسلامة الرقمية (اليونيسف
-                والوزارة).
-              </li>
-              <li>دورات تخصصية في الأمن القومي وإدارة الأزمات والكوارث.</li>
-              <li>
-                اعتماد تدريبي في القيادة والتنمية المؤسسية (الجمهورية الجديدة).
-              </li>
-            </ul>
-          </div>
+background-size:cover;
 
-          <!-- المؤهل الأكاديمي -->
-          <div>
-            <h2 class="section-title">
-              <i
-                class="fa-solid fa-graduation-cap"
-                style="color: var(--accent); margin-left: 8px"
-              ></i>
-              المؤهل الأكاديمي
-            </h2>
-            <p
-              style="font-size: 13.5px; font-weight: 700; color: var(--primary)"
-            >
-              بكالوريوس التربية
-            </p>
-            <p style="font-size: 12.5px; color: var(--muted)">
-              جامعة جنوب الوادي - كلية التربية النوعية (2007)
-            </p>
-          </div>
-        </aside>
-      </div>
-    </div>
-  </body>
-</html>
+background-position:center;
+
+border-bottom:
+1px solid rgba(255,255,255,.05);
+
+}
+
+/* TECH GLOW */
+
+.hero::before{
+
+content:'';
+
+position:absolute;
+
+width:420px;
+height:420px;
+
+background:
+radial-gradient(
+circle,
+rgba(56,189,248,.16),
+transparent 70%
+);
+
+top:-140px;
+left:-120px;
+
+pointer-events:none;
+
+}
+
+.hero::after{
+
+content:'';
+
+position:absolute;
+
+width:350px;
+height:350px;
+
+background:
+radial-gradient(
+circle,
+rgba(34,211,238,.10),
+transparent 70%
+);
+
+bottom:-120px;
+right:-80px;
+
+pointer-events:none;
+
+}
+
+/* HERO GRID */
+
+.hero-grid{
+
+display:grid;
+
+grid-template-columns:
+260px 1fr;
+
+gap:60px;
+
+align-items:center;
+
+position:relative;
+
+z-index:2;
+
+}
+
+/* PROFILE */
+
+.profile-box{
+
+display:flex;
+
+justify-content:center;
+
+}
+
+.profile-frame{
+
+position:relative;
+
+padding:5px;
+
+border-radius:30px;
+
+background:
+linear-gradient(
+135deg,
+rgba(212,160,23,.9),
+rgba(56,189,248,.8)
+);
+
+box-shadow:
+0 20px 40px rgba(0,0,0,.35);
+
+}
+
+.profile-img{
+
+width:220px;
+height:220px;
+
+object-fit:cover;
+
+border-radius:26px;
+
+display:block;
+
+border:4px solid rgba(11,18,32,.9);
+
+}
+
+/* HERO CONTENT */
+
+.hero-content h1{
+
+font-size:52px;
+
+font-weight:800;
+
+color:white;
+
+line-height:1.3;
+
+margin-bottom:12px;
+
+letter-spacing:-.5px;
+
+}
+
+.hero-content h2{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:10px;
+
+padding:8px 18px;
+
+border-radius:50px;
+
+background:
+rgba(56,189,248,.10);
+
+border:
+1px solid rgba(56,189,248,.18);
+
+color:var(--accent-blue);
+
+font-size:18px;
+
+font-weight:600;
+
+margin-bottom:28px;
+
+}
+
+.hero-summary{
+
+max-width:760px;
+
+font-size:17px;
+
+color:#dbeafe;
+
+line-height:2;
+
+}
+
+/* TAGS */
+
+.tech-tags{
+
+display:flex;
+
+gap:12px;
+
+flex-wrap:wrap;
+
+margin-top:30px;
+
+}
+
+.tech-tag{
+
+padding:8px 16px;
+
+border-radius:50px;
+
+background:
+rgba(255,255,255,.06);
+
+border:
+1px solid rgba(255,255,255,.08);
+
+color:#dbeafe;
+
+font-size:13px;
+
+font-weight:600;
+
+backdrop-filter:blur(10px);
+
+}
+
+/* ACTION BAR */
+
+.action-bar{
+
+display:flex;
+
+justify-content:center;
+
+padding:28px;
+
+background:white;
+
+border-bottom:
+1px solid var(--border-soft);
+
+}
+
+.print-btn{
+
+border:none;
+
+background:
+linear-gradient(
+135deg,
+var(--primary-dark),
+var(--secondary-dark)
+);
+
+color:white;
+
+padding:15px 34px;
+
+border-radius:50px;
+
+font-family:'Cairo',sans-serif;
+
+font-size:15px;
+
+font-weight:700;
+
+cursor:pointer;
+
+display:inline-flex;
+
+align-items:center;
+
+gap:12px;
+
+transition:.3s;
+
+box-shadow:
+0 12px 24px rgba(15,23,42,.12);
+
+}
+
+.print-btn:hover{
+
+transform:translateY(-3px);
+
+background:
+linear-gradient(
+135deg,
+var(--gold-premium),
+#eab308
+);
+
+}
+
+/* CONTENT GRID */
+
+.content-grid{
+
+display:grid;
+
+grid-template-columns:
+1.3fr .8fr;
+
+gap:55px;
+
+padding:55px;
+
+}
+
+/* TITLES */
+
+.section-title{
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+font-size:24px;
+
+font-weight:800;
+
+color:var(--primary-dark);
+
+margin-bottom:28px;
+
+}
+
+.section-title i{
+
+width:38px;
+height:38px;
+
+display:flex;
+
+align-items:center;
+justify-content:center;
+
+border-radius:12px;
+
+background:
+linear-gradient(
+135deg,
+var(--gold-soft),
+#fff7ed
+);
+
+color:var(--gold-premium);
+
+font-size:15px;
+
+}
+
+/* TIMELINE */
+
+.timeline{
+
+position:relative;
+
+padding-right:22px;
+
+}
+
+.timeline::before{
+
+content:'';
+
+position:absolute;
+
+right:0;
+top:10px;
+
+width:2px;
+height:calc(100% - 20px);
+
+background:#dbe3ec;
+
+}
+
+.timeline-item{
+
+position:relative;
+
+padding-right:34px;
+
+margin-bottom:42px;
+
+break-inside:avoid;
+page-break-inside:avoid;
+
+}
+
+.timeline-item:last-child{
+margin-bottom:0;
+}
+
+.timeline-item::before{
+
+content:'';
+
+position:absolute;
+
+right:-7px;
+top:7px;
+
+width:14px;
+height:14px;
+
+border-radius:50%;
+
+background:white;
+
+border:3px solid var(--accent-blue);
+
+box-shadow:
+0 0 0 3px rgba(56,189,248,.12);
+
+}
+
+.job-card{
+
+background:white;
+
+border:1px solid var(--border-soft);
+
+border-radius:22px;
+
+padding:28px;
+
+transition:.3s;
+
+}
+
+.job-card:hover{
+
+transform:translateY(-4px);
+
+box-shadow:
+0 12px 30px rgba(15,23,42,.06);
+
+}
+
+.job-header{
+
+display:flex;
+
+justify-content:space-between;
+
+gap:15px;
+
+margin-bottom:12px;
+
+flex-wrap:wrap;
+
+}
+
+.job-header h3{
+
+font-size:19px;
+
+font-weight:800;
+
+color:var(--primary-dark);
+
+}
+
+.job-date{
+
+padding:4px 12px;
+
+border-radius:10px;
+
+background:#f8fafc;
+
+border:1px solid #e2e8f0;
+
+font-size:12px;
+
+font-weight:700;
+
+color:var(--accent-blue);
+
+white-space:nowrap;
+
+}
+
+.job-sub{
+
+font-size:13px;
+
+font-weight:700;
+
+color:var(--text-muted);
+
+margin-bottom:12px;
+
+display:block;
+
+}
+
+.job-text{
+
+font-size:14.5px;
+
+color:var(--text-main);
+
+text-align:justify;
+
+}
+
+/* SIDEBAR */
+
+.sidebar{
+
+display:flex;
+
+flex-direction:column;
+
+gap:40px;
+
+}
+
+/* FEATURE ITEMS */
+
+.feature-list{
+
+display:flex;
+
+flex-direction:column;
+
+gap:14px;
+
+}
+
+.feature-item{
+
+background:white;
+
+border:1px solid var(--border-soft);
+
+padding:18px;
+
+border-radius:18px;
+
+display:flex;
+
+align-items:flex-start;
+
+gap:14px;
+
+transition:.3s;
+
+break-inside:avoid;
+page-break-inside:avoid;
+
+}
+
+.feature-item:hover{
+
+transform:translateX(-4px);
+
+box-shadow:
+0 8px 18px rgba(15,23,42,.05);
+
+}
+
+.feature-icon{
+
+width:36px;
+height:36px;
+
+border-radius:10px;
+
+display:flex;
+
+align-items:center;
+justify-content:center;
+
+background:
+linear-gradient(
+135deg,
+rgba(56,189,248,.10),
+rgba(34,211,238,.12)
+);
+
+color:var(--accent-blue);
+
+font-size:14px;
+
+flex-shrink:0;
+
+}
+
+.feature-text{
+
+font-size:14px;
+
+font-weight:600;
+
+color:var(--primary-dark);
+
+line-height:1.9;
+
+}
+
+/* EDUCATION */
+
+.edu-card{
+
+background:
+linear-gradient(
+135deg,
+white,
+#f8fafc
+);
+
+padding:24px;
+
+border-radius:22px;
+
+border:1px solid var(--border-soft);
+
+}
+
+.edu-card h4{
+
+font-size:17px;
+
+color:var(--primary-dark);
+
+margin-bottom:6px;
+
+}
+
+.edu-card p{
+
+font-size:14px;
+
+color:var(--text-muted);
+
+}
+
+/* CONTACT */
+
+.contact-strip{
+
+display:flex;
+
+justify-content:center;
+
+gap:35px;
+
+flex-wrap:wrap;
+
+padding:20px;
+
+background:#f8fafc;
+
+border-top:
+1px solid var(--border-soft);
+
+}
+
+.contact-item{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+font-size:14px;
+
+color:var(--text-main);
+
+}
+
+.contact-item i{
+
+color:var(--accent-blue);
+
+}
+
+/* FOOTER */
+
+.footer{
+
+padding:26px;
+
+text-align:center;
+
+font-size:13px;
+
+color:var(--text-muted);
+
+}
+
+/* MOBILE */
+
+@media(max-width:980px){
+
+.content-grid{
+
+grid-template-columns:1fr;
+
+padding:35px 20px;
+
+}
+
+.hero{
+
+padding:50px 25px;
+
+}
+
+.hero-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+gap:35px;
+
+}
+
+.hero-content h1{
+font-size:38px;
+}
+
+.hero-summary{
+font-size:16px;
+}
+
+.tech-tags{
+justify-content:center;
+}
+
+.job-header{
+flex-direction:column;
+}
+
+body{
+padding:0;
+}
+
+.cv-shell{
+border-radius:0;
+}
+
+}
+
+/* PRINT */
+
+@media print{
+
+body{
+
+background:white !important;
+
+padding:0;
+
+zoom:85%;
+
+color:#000;
+
+}
+
+/* إزالة التأثيرات */
+
+.cv-shell{
+
+box-shadow:none !important;
+
+border:none !important;
+
+background:white !important;
+
+border-radius:0 !important;
+
+}
+
+/* هيدر فاتح */
+
+.hero{
+
+background:white !important;
+
+color:#111 !important;
+
+padding:25px 30px !important;
+
+border-bottom:2px solid #ddd;
+
+}
+
+/* إزالة الإضاءة */
+
+.hero::before,
+.hero::after{
+display:none !important;
+}
+
+/* النصوص */
+
+.hero-content h1{
+color:#111 !important;
+}
+
+.hero-content h2{
+
+background:#f3f4f6 !important;
+
+color:#0f172a !important;
+
+border:1px solid #ddd !important;
+
+}
+
+.hero-summary{
+color:#333 !important;
+}
+
+/* TAGS */
+
+.tech-tag{
+
+background:#f8fafc !important;
+
+border:1px solid #ddd !important;
+
+color:#111 !important;
+
+}
+
+/* زر الطباعة */
+
+.action-bar{
+display:none !important;
+}
+
+/* البطاقات */
+
+.job-card,
+.feature-item,
+.edu-card{
+
+box-shadow:none !important;
+
+background:white !important;
+
+border:1px solid #ddd !important;
+
+}
+
+/* منع القص */
+
+.timeline-item,
+.feature-item,
+.job-card,
+.edu-card,
+section{
+
+break-inside:avoid !important;
+
+page-break-inside:avoid !important;
+
+}
+
+/* الخط الزمني */
+
+.timeline::before{
+background:#ccc !important;
+}
+
+/* دوائر الخط الزمني */
+
+.timeline-item::before{
+
+background:white !important;
+
+border:3px solid #0f172a !important;
+
+box-shadow:none !important;
+
+}
+
+/* الأيقونات */
+
+.feature-icon{
+
+background:#f3f4f6 !important;
+
+color:#111 !important;
+
+}
+
+/* معلومات الاتصال */
+
+.contact-strip{
+
+background:white !important;
+
+border-top:1px solid #ddd !important;
+
+}
+
+/* الفوتر */
+
+.footer{
+
+color:#666 !important;
+
+background:white !important;
+
+}
+
+/* الصورة */
+
+.profile-frame{
+
+background:#ddd !important;
+
+box-shadow:none !important;
+
+}
+
+.profile-img{
+
+border:2px solid #ccc !important;
+
+}
+
+/* المسافات */
+
+section{
+margin:20px 0 !important;
+}
+
+.content-grid{
+padding:25px !important;
+}
+
+}
+
+/* PAGE */
+
+@page{
+
+size:A4;
+
+margin:10mm;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="cv-shell">
+
+<!-- HERO -->
+
+<header class="hero">
+
+<div class="hero-grid">
+
+<div class="profile-box">
+
+<div class="profile-frame">
+
+<img src="profile.jpg"
+alt="الصورة الشخصية"
+class="profile-img">
+
+</div>
+
+</div>
+
+<div class="hero-content">
+
+<h1>
+المغازي منصور حسانين
+</h1>
+
+<h2>
+
+<i class="fa-solid fa-microchip"></i>
+
+التحول الرقمي • الحلول التقنية • نظم المتابعة
+
+</h2>
+
+<p class="hero-summary">
+
+خبرات مهنية في تطوير بيئات العمل الرقمية،
+وبناء نظم الرصد والمتابعة،
+وتحليل المشكلات التشغيلية،
+ودعم التحول الرقمي داخل المؤسسات التعليمية،
+إلى جانب التدريب التقني وبناء القدرات
+في مجالات الثقافة الرقمية والسلامة المعلوماتية.
+
+</p>
+
+<div class="tech-tags">
+
+<div class="tech-tag">
+Digital Transformation
+</div>
+
+<div class="tech-tag">
+Technical Solutions
+</div>
+
+<div class="tech-tag">
+Data Monitoring
+</div>
+
+<div class="tech-tag">
+Cyber Awareness
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- ACTION -->
+
+<div class="action-bar">
+
+<button onclick="window.print()"
+class="print-btn">
+
+<i class="fa-solid fa-print"></i>
+
+طباعة السيرة الذاتية PDF
+
+</button>
+
+</div>
+
+<!-- CONTENT -->
+
+<div class="content-grid">
+
+<!-- MAIN -->
+
+<main>
+
+<h2 class="section-title">
+
+<i class="fa-solid fa-briefcase"></i>
+
+الخبرات المهنية
+
+</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<div class="job-card">
+
+<div class="job-header">
+
+<h3>
+مدير إدارة الأزمات والكوارث والحد من المخاطر
+</h3>
+
+<div class="job-date">
+منذ 2025
+</div>
+
+</div>
+
+<span class="job-sub">
+مديرية التربية والتعليم بأسوان
+</span>
+
+<p class="job-text">
+
+متابعة نظم الرصد والتقارير التشغيلية،
+ودعم إجراءات الجاهزية،
+والمشاركة في تطوير آليات المتابعة الرقمية
+وغرف العمليات الموحدة
+داخل بيئات العمل التعليمية.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="job-card">
+
+<div class="job-header">
+
+<h3>
+عضو التطوير التكنولوجي والتدريب
+</h3>
+
+<div class="job-date">
+مسار مهني
+</div>
+
+</div>
+
+<span class="job-sub">
+مديرية التربية والتعليم بأسوان
+</span>
+
+<p class="job-text">
+
+تنفيذ البرامج التدريبية
+في مجالات الثقافة الرقمية،
+والسلامة المعلوماتية،
+وتطوير مهارات استخدام التقنيات الحديثة
+للكوادر التعليمية والإدارية.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="job-card">
+
+<div class="job-header">
+
+<h3>
+عضو التطوير التكنولوجي
+</h3>
+
+<div class="job-date">
+إدارة أسوان التعليمية
+</div>
+
+</div>
+
+<span class="job-sub">
+الدعم الفني والتحول الرقمي
+</span>
+
+<p class="job-text">
+
+المشاركة في دعم التحول الرقمي بالمؤسسات التعليمية،
+وتقديم الدعم الفني والتشغيلي،
+والمساهمة في تطوير بيئات العمل التقنية
+وحلول المتابعة الرقمية.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="job-card">
+
+<div class="job-header">
+
+<h3>
+مؤسس مركز حلول تكنولوجيا المعلومات
+</h3>
+
+<div class="job-date">
+2003 - 2019
+</div>
+
+</div>
+
+<span class="job-sub">
+القطاع الخاص
+</span>
+
+<p class="job-text">
+
+تنفيذ أعمال الدعم الفني،
+وتطوير الحلول التشغيلية،
+ومتابعة البنية التقنية،
+وتقديم خدمات الصيانة والتحليل الفني
+للمنشآت والأنشطة التجارية.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="job-card">
+
+<div class="job-header">
+
+<h3>
+محاضر ومدرب تقني
+</h3>
+
+<div class="job-date">
+نشاط تدريبي
+</div>
+
+</div>
+
+<span class="job-sub">
+مكتبة مصر العامة بأسوان
+</span>
+
+<p class="job-text">
+
+تنفيذ برامج ومحاضرات تدريبية
+للشباب والنشء
+في مجالات الثقافة الرقمية،
+والسلامة المعلوماتية،
+والتوعية بالمخاطر الرقمية،
+وتنمية مهارات التفكير والتحليل.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<section>
+
+<h2 class="section-title">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+الكفاءات الرقمية
+
+</h2>
+
+<div class="feature-list">
+
+<div class="feature-item">
+
+<div class="feature-icon">
+
+<i class="fa-solid fa-code"></i>
+
+</div>
+
+<div class="feature-text">
+تطوير الحلول الرقمية التشغيلية
+</div>
+
+</div>
+
+<div class="feature-item">
+
+<div class="feature-icon">
+
+<i class="fa-solid fa-chart-line"></i>
+
+</div>
+
+<div class="feature-text">
+إدارة نظم الرصد والمتابعة
+</div>
+
+</div>
+
+<div class="feature-item">
+
+<div class="feature-icon">
+
+<i class="fa-solid fa-network-wired"></i>
+
+</div>
+
+<div class="feature-text">
+الدعم الفني والبنية التقنية
+</div>
+
+</div>
+
+<div class="feature-item">
+
+<ass="feature-item">
+
+<div class="feature-icon">
+
+<i class="fa-solid fa-users-gear"></i>
+
+</div>
+
+<div class="feature-text">
+التدريب التقني وبناء القدرات
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+
+<i class="fa-solid fa-award"></i>
+
+الاعتمادات المهنية
+
+</h2>
+
+<div class="feature-list">
+
+<div class="feature-item">
+
+<div class="feature-icon">
+
+<i class="fa-solid fa-graduation-cap"></i>
+
+</div>
+
+<div class="feature-text">
+
+مدرب معتمد TOT
+في المهارات الحياتية
+والسلامة الرقمية.
+
+</div>
+
+</div>
+
+<div class="feature-item">
+
+<div class="feature-icon">
+
+<i class="fa-solid fa-shield"></i>
+
+</div>
+
+<div class="feature-text">
+
+دورات تخصصية
+في الأمن القومي
+وإدارة الأزمات والكوارث.
+
+</div>
+
+</div>
+
+<div class="feature-item">
+
+<div class="feature-icon">
+
+<i class="fa-solid fa-building-columns"></i>
+
+</div>
+
+<div class="feature-text">
+
+اعتماد تدريبي
+في القيادة والتنمية المؤسسية.
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+
+<i class="fa-solid fa-user-graduate"></i>
+
+المؤهل الأكاديمي
+
+</h2>
+
+<div class="edu-card">
+
+<h4>
+بكالوريوس التربية النوعية
+</h4>
+
+<p>
+جامعة جنوب الوادي — 2007
+</p>
+
+</div>
+
+</section>
+
+</aside>
+
+</div>
+
+<!-- CONTACT -->
+
+<div class="contact-strip">
+
+<div class="contact-item">
+
+<i class="fa-solid fa-location-dot"></i>
+
+أسوان — مصر
+
+</div>
+
+<div class="contact-item">
+
+<i class="fa-solid fa-phone"></i>
+
++201099944499
+
+</div>
+
+<div class="contact-item">
+
+<i class="fa-solid fa-envelope"></i>
+
+mansorelmoghazy@gmail.com
+
+</div>
+
+</div>
+
+
+
+</div>
+
+</body>
+
