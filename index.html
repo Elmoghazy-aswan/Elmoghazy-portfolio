@@ -1,24 +1,14 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>المغازي منصور حسانين | السيرة الذاتية الرقمية</title>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">  
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
 <style>
-
 :root{
 --primary-dark:#0b1220;
 --secondary-dark:#172033;
@@ -33,7 +23,6 @@
 --border-soft:#e2e8f0;
 }
 
-/* RESET */
 *{
 margin:0;
 padding:0;
@@ -53,7 +42,6 @@ padding:40px 0;
 overflow-x:hidden;
 }
 
-/* MAIN SHELL */
 .cv-shell{
 max-width:1180px;
 margin:auto;
@@ -66,7 +54,6 @@ box-shadow: 0 25px 60px rgba(15,23,42,.08);
 position:relative;
 }
 
-/* HERO */
 .hero{
 position:relative;
 padding:70px 55px;
@@ -77,7 +64,6 @@ background-position:center;
 border-bottom: 1px solid rgba(255,255,255,.05);
 }
 
-/* TECH GLOW */
 .hero::before{
 content:'';
 position:absolute;
@@ -96,7 +82,6 @@ bottom:-120px; right:-80px;
 pointer-events:none;
 }
 
-/* HERO GRID */
 .hero-grid{
 display:grid;
 grid-template-columns: 260px 1fr;
@@ -106,7 +91,6 @@ position:relative;
 z-index:2;
 }
 
-/* PROFILE */
 .profile-box{
 display:flex;
 justify-content:center;
@@ -128,7 +112,6 @@ display:block;
 border:4px solid rgba(11,18,32,.9);
 }
 
-/* HERO CONTENT */
 .hero-content h1{
 font-size:52px;
 font-weight:800;
@@ -159,7 +142,6 @@ color:#dbeafe;
 line-height:2;
 }
 
-/* TAGS */
 .tech-tags{
 display:flex;
 gap:12px;
@@ -178,7 +160,6 @@ font-weight:600;
 backdrop-filter:blur(10px);
 }
 
-/* FLOATING SMART PRINT BUTTON (الموقع الجديد الأفضل) */
 .floating-print-container {
 position: fixed;
 bottom: 35px;
@@ -210,7 +191,6 @@ background: linear-gradient(135deg, var(--gold-premium), #eab308);
 box-shadow: 0 15px 35px rgba(212, 160, 23, 0.35);
 }
 
-/* CONTENT GRID */
 .content-grid{
 display:grid;
 grid-template-columns: 1.3fr .8fr;
@@ -218,7 +198,6 @@ gap:55px;
 padding:55px;
 }
 
-/* TITLES */
 .section-title{
 display:flex;
 align-items:center;
@@ -239,7 +218,6 @@ color:var(--gold-premium);
 font-size:15px;
 }
 
-/* TIMELINE */
 .timeline{
 position:relative;
 padding-right:22px;
@@ -328,14 +306,12 @@ color:var(--text-main);
 text-align:justify;
 }
 
-/* SIDEBAR */
 .sidebar{
 display:flex;
 flex-direction:column;
 gap:40px;
 }
 
-/* FEATURE ITEMS */
 .feature-list{
 display:flex;
 flex-direction:column;
@@ -378,7 +354,6 @@ color:var(--primary-dark);
 line-height:1.9;
 }
 
-/* EDUCATION */
 .edu-card{
 background: linear-gradient(135deg, white, #f8fafc);
 padding:24px;
@@ -397,7 +372,6 @@ font-size:14px;
 color:var(--text-muted);
 }
 
-/* CONTACT */
 .contact-strip{
 display:flex;
 justify-content:center;
@@ -420,7 +394,6 @@ color:var(--text-main);
 color:var(--accent-blue);
 }
 
-/* FOOTER */
 .footer{
 padding:26px;
 text-align:center;
@@ -428,52 +401,61 @@ font-size:13px;
 color:var(--text-muted);
 }
 
-/* MOBILE */
 @media(max-width:980px){
 .content-grid{
 grid-template-columns:1fr;
 padding:35px 20px;
 }
+
 .hero{
 padding:50px 25px;
 }
+
 .hero-grid{
 grid-template-columns:1fr;
 text-align:center;
 gap:35px;
 }
+
 .hero-content h1{
 font-size:38px;
 }
+
 .hero-content h2{
 margin-bottom:20px;
 }
+
 .hero-summary{
 font-size:16px;
 }
+
 .tech-tags{
 justify-content:center;
 }
+
 .job-header{
 flex-direction:column;
 }
+
 body{
 padding:0;
 }
+
 .cv-shell{
 border-radius:0;
 }
+
 .floating-print-container {
 bottom: 20px;
 left: 20px;
 }
+
 .print-btn {
 padding: 12px 22px;
 font-size: 14px;
 }
 }
 
-/* PRINT ENGINE */
 @media print{
 body{
 background:white !important;
@@ -481,39 +463,46 @@ padding:0;
 zoom:85%;
 color:#000;
 }
+
 .cv-shell{
 box-shadow:none !important;
 border:none !important;
 background:white !important;
 border-radius:0 !important;
 }
+
 .hero{
 background:white !important;
 color:#111 !important;
 padding:25px 30px !important;
 border-bottom:2px solid #ddd;
 }
+
 .hero::before, .hero::after{
 display:none !important;
 }
+
 .hero-content h1{
 color:#111 !important;
 }
+
 .hero-content h2{
 background:#f3f4f6 !important;
 color:#0f172a !important;
 border:1px solid #ddd !important;
 }
+
 .hero-summary{
 color:#333 !important;
 }
+
 .tech-tag{
 background:#f8fafc !important;
 border:1px solid #ddd !important;
 color:#111 !important;
 }
 
-/* إخفاء الزر العائم ومنطقته بالكامل أثناء الطباعة الحقيقية */
+
 .floating-print-container{
 display:none !important;
 }
@@ -523,58 +512,64 @@ box-shadow:none !important;
 background:white !important;
 border:1px solid #ddd !important;
 }
+
 .timeline-item, .feature-item, .job-card, .edu-card, section{
 break-inside:avoid !important;
 page-break-inside:avoid !important;
 }
+
 .timeline::before{
 background:#ccc !important;
 }
+
 .timeline-item::before{
 background:white !important;
 border:3px solid #0f172a !important;
 box-shadow:none !important;
 }
+
 .feature-icon{
 background:#f3f4f6 !important;
 color:#111 !important;
 }
+
 .contact-strip{
 background:white !important;
 border-top:1px solid #ddd !important;
 }
+
 .footer{
 color:#666 !important;
 background:white !important;
 }
+
 .profile-frame{
 background:#ddd !important;
 box-shadow:none !important;
 }
+
 .profile-img{
 border:2px solid #ccc !important;
 }
+
 section{
 margin:20px 0 !important;
 }
+
 .content-grid{
 padding:25px !important;
 }
 }
 
-/* PAGE CONFIG */
+
 @page{
 size:A4;
 margin:10mm;
 }
 
 </style>
-
 </head>
-
 <body>
-
-<!-- الزر العائم الذكي في موقعه المطور والجديد -->
 <div class="floating-print-container">
     <button onclick="window.print()" class="print-btn">
         <i class="fa-solid fa-print"></i>
@@ -584,7 +579,6 @@ margin:10mm;
 
 <div class="cv-shell">
 
-<!-- HERO -->
 <header class="hero">
 <div class="hero-grid">
 <div class="profile-box">
@@ -613,10 +607,8 @@ margin:10mm;
 </div>
 </header>
 
-<!-- CONTENT -->
 <div class="content-grid">
 
-<!-- MAIN COLUMN -->
 <main>
 <h2 class="section-title">
 <i class="fa-solid fa-briefcase"></i>
@@ -691,7 +683,6 @@ margin:10mm;
 </div>
 </main>
 
-<!-- SIDEBAR -->
 <aside class="sidebar">
 <section>
 <h2 class="section-title">
@@ -761,7 +752,6 @@ margin:10mm;
 
 </div>
 
-<!-- CONTACT -->
 <div class="contact-strip">
 <div class="contact-item"><i class="fa-solid fa-location-dot"></i>أسوان — مصر</div>
 <div class="contact-item"><i class="fa-solid fa-phone"></i>+201099944499</div>
